@@ -60,6 +60,8 @@ def handle_collisions():
                     a.handle_collision(group, b)
                     b.handle_collision(group, a)
 
+    
+
 def remove_collision_object(o):
     for pairs in collision_pairs.values():
         if o in pairs[0]:
