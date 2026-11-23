@@ -65,6 +65,7 @@ class Zombie:
                 game_world.remove_object(self)
            self.width = self.width/ 2
            self.height = self.height/ 2
+           self.y =+ 100
            self.count += 1
 
         elif group == 'boy:zombie':
