@@ -59,6 +59,6 @@ class Zombie:
         return self.x - 100, self.y - 100, self.x + 100, self.y + 100
 
     def handle_collision(self, group, other):
-        # if group == 'zombie:ball':
-        #    pass
-        pass
+        if group == 'zombie:ball':
+           self.width = self.width/ 2
+           self.height = self.height/ 2
