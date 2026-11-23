@@ -146,7 +146,7 @@ class Boy:
         game_world.add_oject(ball)
         game_world.add_collision_pair('grass:ball', None, ball)
         game_world.add_collision_pair('boy:ball', None, ball)
-        
+
         game_world.add_collision_pair('zombie:ball', None, ball)
 
     def pause(self):
@@ -180,6 +180,8 @@ class Boy:
             self.dir = 0
             self.stop_run()
 
+        
+
     def update(self):
         self.states[self.state].do(self)
 
@@ -195,3 +197,5 @@ class Boy:
         if group == 'boy:ball':
             print('COLLISION boy:ball')
             self.ball_count += 1
+
+        

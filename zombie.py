@@ -66,3 +66,6 @@ class Zombie:
            self.width = self.width/ 2
            self.height = self.height/ 2
            self.count += 1
+
+        elif group == 'boy:zombie':
+            game_framework.quit()
